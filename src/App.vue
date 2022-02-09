@@ -1,32 +1,36 @@
 <template>
-  <div id="app">
-    <myHeader/>
-    <div class="test">
-    </div>
-    <myFooter/>
-  </div>
+  <router-view/>
+  <side-bar/>
 </template>
 
 <script>
-
-import myHeader from "@/components/header";
-import myFooter from "@/components/footer";
-
+import sideBar from "@/components/sideBar";
 
 export default {
   name: 'App',
-  components: {myHeader, myFooter}
+  components: {sideBar}
 }
 </script>
 
 <style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 
-/*#app {*/
-/*  font-family: Avenir, Helvetica, Arial, sans-serif;*/
-/*  -webkit-font-smoothing: antialiased;*/
-/*  -moz-osx-font-smoothing: grayscale;*/
-/*  text-align: center;*/
-/*  color: #2c3e50;*/
-/*  margin-top: 60px;*/
-/*}*/
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
 </style>
