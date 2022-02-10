@@ -1,26 +1,28 @@
 <template>
   <div class="sidebar" :style="{width: sidebarWidth}">
     <h1>
-      <span v-if="!collapsed">
-        <div id="nav">
-    <router-link to="/">Home</router-link><br>
-    <router-link to="/about">About</router-link>
-  </div>
-      </span>
+      <side-bar-link to="/" :icon_class="'fas'" :icon_logo="'house'">Home</side-bar-link>
+      <!--
+      <side-bar-link to="/about" icon="fas fa-home">About</side-bar-link>
+      <side-bar-link to="/projects" icon="fas fa-home">Projects</side-bar-link>-->
     </h1>
     <span class="collapse-icon" :class="{'rotate-180': collapsed}" @click="toggleSidebar">
-      <font-awesome-icon :icon="['fas', 'cog']"/>
+      <font-awesome-icon :icon="['fas', 'backward']"/>
+
     </span>
   </div>
 </template>
 
 <script>
 import {collapsed, toggleSidebar, sidebarWidth} from "@/function/state";
+import sideBarLink from "@/components/sideBarLink";
+import SideBarLink from "@/components/sideBarLink";
 
 export default {
   name: "sideBar",
+  components: {SideBarLink},
   setup() {
-    return {collapsed, toggleSidebar, sidebarWidth}
+    return {collapsed, toggleSidebar, sidebarWidth, sideBarLink}
   }
 
 }
