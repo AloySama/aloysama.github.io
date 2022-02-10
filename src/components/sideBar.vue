@@ -5,7 +5,7 @@
       <side-bar-link to="/about" :icon_class="'fas'" :icon_logo="'address-book'">About</side-bar-link>
     </h1>
     <span class="collapse-icon" :class="{'rotate-180': collapsed}" @click="toggleSidebar">
-      <font-awesome-icon :icon="['fas', 'backward']"/>
+      <div class="clickable"><font-awesome-icon :icon="['fas', 'backward']"/></div>
 
     </span>
   </div>
@@ -61,5 +61,9 @@ export default {
 .rotate-180 {
   transform: rotate(180deg);
   transition: .2s linear;
+}
+
+.clickable {
+  cursor: pointer;
 }
 </style>

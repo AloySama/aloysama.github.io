@@ -2,7 +2,7 @@
   <router-link :to="to" class="link" :class="{active: isActive}">
     <transition name="fade">
       <span v-if="!collapsed">
-        <font-awesome-icon :icon="[icon_class, icon_logo]"/>
+        <span class="space"><font-awesome-icon :icon="[icon_class, icon_logo]"/></span>
         <slot/>
       </span>
     </transition>
@@ -73,10 +73,21 @@ export default {
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity .1s;
+  animation: cssAnim 0s .25s forwards;
+  visibility: hidden;
 }
 
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+
+@keyframes cssAnim {
+  to {visibility: visible}
+}
+
+.space {
+  display: inline-block;
+  margin-right: .5em;
 }
 </style>
