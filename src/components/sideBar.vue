@@ -2,6 +2,7 @@
   <div class="sidebar" :style="{width: sidebarWidth}">
     <h1>
       <side-bar-link to="/" :icon_class="'fas'" :icon_logo="'house'">Home</side-bar-link>
+      <side-bar-link to="/projects" :icon_class="'fas'" :icon_logo="'book'">Projects</side-bar-link>
       <side-bar-link to="/about" :icon_class="'fas'" :icon_logo="'address-book'">About</side-bar-link>
     </h1>
     <span class="collapse-icon" :class="{'rotate-180': collapsed}" @click="toggleSidebar">
