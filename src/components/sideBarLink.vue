@@ -5,6 +5,9 @@
         <span class="space"><font-awesome-icon :icon="[icon_class, icon_logo]"/></span>
         <slot/>
       </span>
+      <span v-else class="resizeIcon">
+        <font-awesome-icon :icon="[icon_class, icon_logo]"/>
+      </span>
     </transition>
   </router-link>
 </template>
@@ -89,5 +92,13 @@ export default {
 .space {
   display: inline-block;
   margin-right: .5em;
+}
+
+.resizeIcon {
+  font-size: 80%;
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

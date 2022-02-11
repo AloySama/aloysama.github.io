@@ -7,7 +7,6 @@
     </h1>
     <span class="collapse-icon" :class="{'rotate-180': collapsed}" @click="toggleSidebar">
       <div class="clickable"><font-awesome-icon :icon="['fas', 'backward']"/></div>
-
     </span>
   </div>
 </template>
