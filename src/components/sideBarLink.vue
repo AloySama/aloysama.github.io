@@ -5,7 +5,7 @@
         <span class="space "><font-awesome-icon :icon="[icon_class, icon_logo]"/></span>
         <slot/>
       </span>
-      <span v-else class="resizeIcon mt-6 text-xl">
+      <span v-else class="resizeIcon mt-6 text-2xl flex left-1">
         <font-awesome-icon :icon="[icon_class, icon_logo]"/>
       </span>
     </transition>
