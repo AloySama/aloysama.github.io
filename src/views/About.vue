@@ -1,10 +1,11 @@
 <template>
   <div class="about">
-    <h1>About me</h1>
-    <div id="photo">
-      <img class="pp img-cropper" alt="photo" :src="photo">
-      <h1>Aloïs Brengard</h1>
-    </div>
+    <figure>
+      <div id="photo">
+        <img class="pp img-cropper" alt="photo" :src="photo">
+        <h1>Aloïs Brengard</h1>
+      </div>
+    </figure>
   </div>
 </template>
 

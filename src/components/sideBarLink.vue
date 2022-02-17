@@ -1,11 +1,11 @@
 <template>
-  <router-link :to="to" class="link" :class="{active: isActive}">
+  <router-link :to="to" class="link text-3xl" :class="{active: isActive}">
     <transition name="fade">
       <span v-if="!collapsed">
-        <span class="space"><font-awesome-icon :icon="[icon_class, icon_logo]"/></span>
+        <span class="space "><font-awesome-icon :icon="[icon_class, icon_logo]"/></span>
         <slot/>
       </span>
-      <span v-else class="resizeIcon">
+      <span v-else class="resizeIcon mt-6 text-xl">
         <font-awesome-icon :icon="[icon_class, icon_logo]"/>
       </span>
     </transition>
@@ -49,7 +49,6 @@ export default {
 
   cursor: pointer;
   position: relative;
-  font-weight: 400;
   user-select: none;
   margin: .1em 0;
   padding: .4em;
@@ -95,10 +94,10 @@ export default {
 }
 
 .resizeIcon {
-  font-size: 80%;
+  /*font-size: 80%;*/
   position: relative;
-  top: 25%;
-  left: 50%;
+  /*top: 25%;
+  left: 50%;*/
   transform: translate(-50%, -50%);
 }
 </style>
