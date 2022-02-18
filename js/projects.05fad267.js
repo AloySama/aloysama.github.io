@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["projects"],{acca:function(n,c,e){"use strict";e.r(c);var t=e("7a23");function r(n,c,e,r,a,o){return Object(t["u"])(),Object(t["g"])("div",null," PROJECTS HERE ")}var a={name:"Projects"},o=e("6b0d"),s=e.n(o);const u=s()(a,[["render",r]]);c["default"]=u}}]);
-//# sourceMappingURL=projects.05fad267.js.map
