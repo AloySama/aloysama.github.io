@@ -13,23 +13,26 @@
 
 <script>
 import {collapsed, toggleSidebar, sidebarWidth} from "@/function/state";
-import sideBarLink from "@/components/sideBarLink";
 import SideBarLink from "@/components/sideBarLink";
 
 export default {
   name: "sideBar",
   components: {SideBarLink},
   setup() {
-    return {collapsed, toggleSidebar, sidebarWidth, sideBarLink}
+    return {collapsed, toggleSidebar, sidebarWidth, SideBarLink}
   }
 
 }
 </script>
 <style>
 :root {
-  --sidebar-bg-color: #2f855a;
-  --sidebar-item-hover: #38a169;
-  --sidebar-item-active: #276749;
+  --sidebar-bg-color: #5968ba;
+  --sidebar-item-hover: #28348f;
+  --sidebar-item-active: #3746a8;
+  /*#5968ba
+   #28348f
+   #3746a8
+   */
 }
 </style>
 
