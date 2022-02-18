@@ -75,7 +75,7 @@ export default {
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity .1s;
-  animation: cssAnim 0s .25s forwards;
+  animation: cssAnim 0s .3s forwards;
   visibility: hidden;
 }
 
@@ -90,14 +90,13 @@ export default {
 
 .space {
   display: inline-block;
-  margin-right: .5em;
+  margin-right: .25em;
 }
 
 .resizeIcon {
-  /*font-size: 80%;*/
   position: relative;
-  /*top: 25%;
-  left: 50%;*/
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 </style>

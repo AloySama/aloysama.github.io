@@ -6,7 +6,7 @@
       <side-bar-link to="/about" :icon_class="'fas'" :icon_logo="'address-book'">About</side-bar-link>
     </h1>
     <span class="collapse-icon" :class="{'rotate-180': collapsed}" @click="toggleSidebar">
-      <div class="clickable"><font-awesome-icon :icon="['fas', 'backward']"/></div>
+      <span class="clickable"><font-awesome-icon :icon="['fas', 'backward']"/></span>
     </span>
   </div>
 </template>
@@ -29,10 +29,6 @@ export default {
   --sidebar-bg-color: #5968ba;
   --sidebar-item-hover: #28348f;
   --sidebar-item-active: #3746a8;
-  /*#5968ba
-   #28348f
-   #3746a8
-   */
 }
 </style>
 

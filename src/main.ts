@@ -6,7 +6,6 @@ import {fab} from '@fortawesome/free-brands-svg-icons';
 import {faFontAwesome} from '@fortawesome/free-brands-svg-icons';
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
-import './assets/tailwind.css'
 
 library.add(fas)
 library.add(fab)
