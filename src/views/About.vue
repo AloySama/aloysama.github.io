@@ -7,10 +7,14 @@
       </div>
     </figure>
   </div>
+  <competence-box/>
 </template>
 
 <script>
+import competenceBox from "@/components/competenceBox";
+
 export default {
+  components: {competenceBox},
   data() {
     return {
       photo: require('@/assets/images/moi.png')
