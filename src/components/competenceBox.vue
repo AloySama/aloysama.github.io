@@ -1,9 +1,11 @@
 <template>
   <ul class="box">
-    <li><competence-bar color="#3746a8" name="C/C++" percent="80.60"/></li>
-    <li><competence-bar color="#f5c941" name="Python" percent="74.67"/></li>
-    <li><competence-bar color="#3c4548" name="Shell" percent="50.89"/></li>
-    <li><competence-bar color="#e96228" name="HTML/CSS" percent="45.99"/></li>
+    <li><competence-bar color="#3746a8" name="C/C++" percent="80"/></li>
+    <li><competence-bar color="#f5c941" name="Python" percent="74"/></li>
+    <li><competence-bar color="#3c4548" name="Shell" percent="51"/></li>
+    <li><competence-bar color="#e96228" name="HTML/CSS" percent="46"/></li>
+    <li><competence-bar color="#5F5286" name="Haskell" percent="20"/></li>
+    <li><competence-bar color="black" name="Assembly" percent="10"/></li>
   </ul>
 </template>
 

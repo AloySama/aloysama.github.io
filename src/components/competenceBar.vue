@@ -3,7 +3,6 @@
     <div class="lang">{{ name }}</div>
     <div class="bar">
       <div class="progress" :style="{'background': color, 'width': percent+'%'}"></div>
-      <div class="percent">{{ percent }}%</div>
     </div>
   </div>
 </template>
